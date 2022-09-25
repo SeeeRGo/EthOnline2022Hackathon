@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { getSampleData } from "./api";
-import { SampleList } from "./components/SampleList";
+import { CreateInitiative } from "./components/CreateInitiative";
 import { useAppDispatch } from "./hooks";
 
 export const App = () => {
@@ -8,7 +8,5 @@ export const App = () => {
   useEffect(() => {
     dispatch(getSampleData());
   }, [dispatch])
-  return (
-    <SampleList />
-  );
+  return <CreateInitiative />;
 };
